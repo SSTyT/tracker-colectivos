@@ -1,0 +1,29 @@
+@import "ionic.app";
+
+@font-face {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/gotham.eot?#iefix") format("embedded-opentype"), 
+    	 url("fonts/gotham.ttf") format("truetype"), 
+    	 url("fonts/gotham.svg#Gotham") format("svg");
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/OpenSans.eot?#iefix") format("embedded-opentype"), 
+    	 url("fonts/OpenSans.ttf") format("truetype"), 
+    	 url("fonts/OpenSans.svg#OpenSans") format("svg");
+}
+
+ion-header-bar{
+    font-family: $headings-font-family;
+}
+
+.bar-energized {
+  .button {
+    @include button-clear($dark, $bar-title-font-size);
+  }
+}
